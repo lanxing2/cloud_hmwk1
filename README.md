@@ -1,33 +1,18 @@
+# Application site
+
+Application: http://twittmap-1.7cj22hynnu.us-east-1.elasticbeanstalk.com/
+
+Elasticsearch Endpoint: search-twitt-map-db-w5h27iafbziaho2txcmqs6teei.us-east-1.es.amazonaws.com
+
+
 # Installation
 
-We need Node, npm, bower and MongoDB for this to work. Then in the project directory:
+We need Node, npm to work. Node modules are not included in this repo.
 
-    $ npm install
-    $ bower install
 
-Mongodb must be installed and started, otherwise you will get a connection error
+# Features
 
-# Twitter stream
+Elasticsearch in AWS
+Real-time update (every 5 seconds)
+Search by distance (geospatial feature in elastic search)
 
-If you go to http://localhost:3000/fight you will get the Twitter stream
-
-# Oauth.js for Facebook and Twitter
-
-```javascript
-var ids = {
-    facebook: {
-        clientID: "",
-        clientSecret: "",
-        callbackURL: "http://localhost:3000/auth/facebook/callback"
-    },
-    twitter: {
-        consumerKey: "",
-        consumerSecret: "",
-        callbackURL: "http://localhost:3000/auth/twitter/callback",
-        accessToken: "",
-        accessTokenSecret: ""
-    }
-}
-
-module.exports = ids
-```
