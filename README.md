@@ -13,6 +13,10 @@ We need Node, npm to work. Node modules are not included in this repo.
 # Features
 
 Elasticsearch in AWS
+
+
 Real-time update (every 5 seconds)
+
+
 Search by distance (geospatial feature in elastic search)
 
